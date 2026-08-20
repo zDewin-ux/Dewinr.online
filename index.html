@@ -3,325 +3,842 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DewinR</title>
+
+  <title>Dewin Reales | Full Stack Developer</title>
+
+  <meta
+    name="description"
+    content="Portfolio de Dewin Reales - Full Stack Developer, AWS, Python y desarrollo web."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <div class="cv-container">
+  <!-- =========================
+       ESCENA 3D
+  ========================== -->
 
-    
-    <aside class="sidebar">
+  <canvas id="webgl"></canvas>
 
-      <div class="profile">
+  <div class="noise"></div>
 
-       
-        <img src="fotoP.jpeg" alt="Foto Perfil">
+  <!-- =========================
+       NAVBAR
+  ========================== -->
 
-        <h1>Dewin Reales</h1>
+  <header class="navbar">
 
-        <p>
-          Full Stack Developer • AWS • Diseño Web • Python
+    <a href="#inicio" class="logo">
+      <span>DR</span>
+    </a>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#skills">Skills</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a
+      href="https://github.com/zDewin-ux"
+      target="_blank"
+      class="github-button"
+    >
+      <i class="fa-brands fa-github"></i>
+      GitHub
+    </a>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="inicio" class="hero">
+
+      <div class="hero-content reveal">
+
+        <div class="availability">
+
+          <span></span>
+
+          Disponible para proyectos
+
+        </div>
+
+        <p class="eyebrow">
+          FULL STACK DEVELOPER
         </p>
 
-      </div>
+        <h1>
+          Dewin
+          <strong>Reales.</strong>
+        </h1>
 
-      <!-- CONTACTO -->
-
-      <div class="section-title">Contacto</div>
-
-      <div class="info-item">
-        <span>Email</span>
-        <p>dewinguzman257@gmail.com</p>
-      </div>
-
-      <div class="info-item">
-        <span>Ubicación</span>
-        <p>Barranquilla, Colombia</p>
-      </div>
-
-      <div class="info-item">
-        <span>GitHub</span>
-        <p>https://github.com/zDewin-ux</p>
-      </div>
-
-      <!-- HABILIDADES -->
-
-      <div class="section-title">Habilidades</div>
-
-      <div class="skills">
-
-        <div class="skill">Python</div>
-        <div class="skill">AWS</div>
-        <div class="skill">Frontend</div>
-        <div class="skill">Backend</div>
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">UI/UX</div>
-        <div class="skill">Diseño Web</div>
-        <div class="skill">Responsive Design</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Linux</div>
-        <div class="skill">Fedora</div>
-        <div class="skill">Microservicios</div>
-        <div class="skill">APIs REST</div>
-        <div class="skill">AWS Lambda</div>
-        <div class="skill">DynamoDB</div>
-        <div class="skill">Aplicaciones Web</div>
-        <div class="skill">Landing Pages</div>
-
-      </div>
-
-      <!-- IDIOMAS -->
-
-      <div class="section-title">Idiomas</div>
-
-      <div class="rating">
-
-        <div class="rating-title">
-          Español — Nativo
-        </div>
-
-        <div class="stars">
-          ★★★★★
-        </div>
-
-      </div>
-
-      <div class="rating">
-
-        <div class="rating-title">
-          Inglés — Intermedio
-        </div>
-
-        <div class="stars">
-          ★★★★☆
-        </div>
-
-      </div>
-
-      <!-- HABILIDADES PERSONALES -->
-
-      <div class="section-title">
-        Habilidades Personales
-      </div>
-
-      <div class="rating">
-
-        <div class="rating-title">
-          Trabajo en Equipo
-        </div>
-
-        <div class="stars">
-          ★★★★★
-        </div>
-
-      </div>
-
-      <div class="rating">
-
-        <div class="rating-title">
-          Creatividad & Diseño
-        </div>
-
-        <div class="stars">
-          ★★★★★
-        </div>
-
-      </div>
-
-      <div class="rating">
-
-        <div class="rating-title">
-          Resolución de Problemas
-        </div>
-
-        <div class="stars">
-          ★★★★★
-        </div>
-
-      </div>
-
-    </aside>
-
-    
-    <main class="main">
-
-      
-
-      <section class="main-section">
-
-        <h2 class="main-title">
-          Perfil Profesional
+        <h2>
+          Desarrollo web · Cloud · Backend
         </h2>
 
-        <p class="about">
-
-          Estudiante de séptimo semestre de Ingeniería de Sistemas
-          en la Universidad Autónoma del Caribe, apasionado por el
-          desarrollo de software, diseño web y tecnologías cloud.
-
-          <br><br>
-
-          Cuento con experiencia desarrollando aplicaciones web,
-          páginas modernas y soluciones backend utilizando Python,
-          AWS Lambda y DynamoDB. También poseo conocimientos en
-          frontend, diseño UI/UX y creación de interfaces modernas,
-          responsivas y profesionales.
-
-          <br><br>
-
-          Tengo habilidades en arquitectura de microservicios,
-          APIs REST, Git/GitHub y despliegue de proyectos web.
-          Me adapto fácilmente al trabajo en equipo, resolución
-          de problemas y aprendizaje de nuevas tecnologías.
-
-          <br><br>
-
-          Apasionado por la tecnología, Linux, optimización de
-          sistemas y desarrollo de soluciones escalables.
-
+        <p class="hero-description">
+          Creo aplicaciones web modernas y soluciones backend
+          escalables combinando desarrollo, diseño y tecnologías
+          cloud.
         </p>
 
-      </section>
+        <div class="hero-tech">
 
-      
+          <span>
+            <i class="fa-brands fa-python"></i>
+            Python
+          </span>
 
-      <section class="main-section">
+          <span>
+            <i class="fa-brands fa-aws"></i>
+            AWS
+          </span>
 
-        <h2 class="main-title">
-          Experiencia & Proyectos
-        </h2>
+          <span>
+            <i class="fa-brands fa-react"></i>
+            React
+          </span>
 
-        <div class="card">
+          <span>
+            <i class="fa-solid fa-server"></i>
+            Backend
+          </span>
+
+        </div>
+
+        <div class="hero-buttons">
+
+          <a href="#proyectos" class="btn btn-primary">
+            Ver proyectos
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+
+          <a
+            href="mailto:dewinguzman257@gmail.com"
+            class="btn btn-outline"
+          >
+            Contactarme
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-scroll">
+
+        <span>SCROLL</span>
+
+        <div class="scroll-line"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE MI
+    ========================== -->
+
+    <section id="sobre-mi" class="section">
+
+      <div class="section-title reveal">
+
+        <span>01</span>
+
+        <div>
+          <small>SOBRE MÍ</small>
+          <h2>Construyo cosas<br><b>que funcionan.</b></h2>
+        </div>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="glass-card about-card reveal">
+
+          <div class="card-number">
+            01
+          </div>
 
           <h3>
-            Desarrollo Backend con AWS
+            Full Stack
+            <span>Developer</span>
           </h3>
 
           <p>
+            Soy estudiante de Ingeniería de Sistemas en la
+            Universidad Autónoma del Caribe, apasionado por
+            el desarrollo de software, el diseño web y las
+            tecnologías cloud.
+          </p>
 
-            Desarrollo de servicios backend utilizando Python,
-            AWS Lambda y DynamoDB bajo arquitectura serverless.
-            Implementación de APIs, autenticación OTP y manejo
-            de microservicios.
-
+          <p>
+            Me gusta crear aplicaciones que combinen una
+            interfaz atractiva con una arquitectura backend
+            sólida y escalable.
           </p>
 
         </div>
 
-        <div class="card">
 
-          <h3>
-            Desarrollo Frontend & Diseño Web
-          </h3>
+        <div class="about-orbit reveal">
 
-          <p>
+          <div class="orbit-ring ring-one"></div>
+          <div class="orbit-ring ring-two"></div>
 
-            Creación de páginas web modernas, responsivas y
-            profesionales utilizando HTML, CSS y JavaScript.
-            Diseño de interfaces UI/UX enfocadas en experiencia
-            visual y rendimiento.
+          <div class="orbit-core">
 
-          </p>
+            <i class="fa-solid fa-code"></i>
 
-        </div>
+            <span>
+              FULL<br>
+              STACK
+            </span>
 
-        <div class="card">
+          </div>
 
-          <h3>
-            Linux & Optimización
-          </h3>
+          <div class="orbit-item orbit-python">
+            <i class="fa-brands fa-python"></i>
+          </div>
 
-          <p>
+          <div class="orbit-item orbit-aws">
+            <i class="fa-brands fa-aws"></i>
+          </div>
 
-            Experiencia utilizando Fedora Linux, configuración
-            de entornos de desarrollo, optimización de sistemas,
-            GitHub y herramientas modernas de programación.
+          <div class="orbit-item orbit-react">
+            <i class="fa-brands fa-react"></i>
+          </div>
 
-          </p>
-
-        </div>
-
-      </section>
-
-      <!-- TECNOLOGÍAS -->
-
-      <section class="main-section">
-
-        <h2 class="main-title">
-          Tecnologías & Herramientas
-        </h2>
-
-        <div class="tech-list">
-
-          <div class="tech">Python</div>
-          <div class="tech">HTML5</div>
-          <div class="tech">CSS3</div>
-          <div class="tech">JavaScript</div>
-          <div class="tech">React</div>
-          <div class="tech">Frontend Development</div>
-          <div class="tech">Backend Development</div>
-          <div class="tech">Diseño UI/UX</div>
-          <div class="tech">AWS Lambda</div>
-          <div class="tech">DynamoDB</div>
-          <div class="tech">Git & GitHub</div>
-          <div class="tech">Linux Fedora</div>
-          <div class="tech">Microservicios</div>
-          <div class="tech">Serverless</div>
-          <div class="tech">Responsive Design</div>
-          <div class="tech">APIs REST</div>
+          <div class="orbit-item orbit-linux">
+            <i class="fa-brands fa-linux"></i>
+          </div>
 
         </div>
 
-      </section>
+      </div>
 
-      
+    </section>
 
-      <section class="main-section">
 
-        <h2 class="main-title">
-          Educación
-        </h2>
+    <!-- =========================
+         SKILLS
+    ========================== -->
 
-        <div class="card">
+    <section id="skills" class="section">
+
+      <div class="section-title reveal">
+
+        <span>02</span>
+
+        <div>
+          <small>TECNOLOGÍAS</small>
+          <h2>Mi stack<br><b>tecnológico.</b></h2>
+        </div>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+
+        <article class="skill-card tilt reveal">
+
+          <div class="skill-icon">
+            <i class="fa-brands fa-python"></i>
+          </div>
+
+          <div class="skill-content">
+
+            <small>BACKEND</small>
+
+            <h3>Python</h3>
+
+            <p>
+              Desarrollo de APIs, automatización y servicios
+              backend.
+            </p>
+
+            <div class="skill-tags">
+              <span>FastAPI</span>
+              <span>REST</span>
+              <span>Lambda</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="skill-card tilt reveal">
+
+          <div class="skill-icon aws">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+
+          <div class="skill-content">
+
+            <small>CLOUD</small>
+
+            <h3>AWS</h3>
+
+            <p>
+              Arquitecturas serverless y servicios cloud.
+            </p>
+
+            <div class="skill-tags">
+              <span>Lambda</span>
+              <span>DynamoDB</span>
+              <span>Serverless</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="skill-card tilt reveal">
+
+          <div class="skill-icon react">
+            <i class="fa-brands fa-react"></i>
+          </div>
+
+          <div class="skill-content">
+
+            <small>FRONTEND</small>
+
+            <h3>React</h3>
+
+            <p>
+              Interfaces modernas, interactivas y responsive.
+            </p>
+
+            <div class="skill-tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="skill-card tilt reveal">
+
+          <div class="skill-icon">
+            <i class="fa-solid fa-server"></i>
+          </div>
+
+          <div class="skill-content">
+
+            <small>BACKEND</small>
+
+            <h3>NestJS</h3>
+
+            <p>
+              APIs, arquitectura modular y aplicaciones backend.
+            </p>
+
+            <div class="skill-tags">
+              <span>NestJS</span>
+              <span>Node</span>
+              <span>TypeORM</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="skill-card tilt reveal">
+
+          <div class="skill-icon linux">
+            <i class="fa-brands fa-linux"></i>
+          </div>
+
+          <div class="skill-content">
+
+            <small>SISTEMAS</small>
+
+            <h3>Linux</h3>
+
+            <p>
+              Entornos de desarrollo y administración de sistemas.
+            </p>
+
+            <div class="skill-tags">
+              <span>Fedora</span>
+              <span>Git</span>
+              <span>Terminal</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="skill-card tilt reveal">
+
+          <div class="skill-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <div class="skill-content">
+
+            <small>WEB</small>
+
+            <h3>UI / UX</h3>
+
+            <p>
+              Diseño de interfaces modernas y experiencias
+              digitales.
+            </p>
+
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive</span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
+
+    <section id="proyectos" class="section">
+
+      <div class="section-title reveal">
+
+        <span>03</span>
+
+        <div>
+          <small>PROYECTOS</small>
+          <h2>Cosas que<br><b>he construido.</b></h2>
+        </div>
+
+      </div>
+
+
+      <div class="projects">
+
+
+        <article class="project tilt-big reveal">
+
+          <div class="project-visual medical">
+
+            <i class="fa-solid fa-hospital"></i>
+
+            <div class="visual-grid"></div>
+
+          </div>
+
+          <div class="project-info">
+
+            <small>FULL STACK</small>
+
+            <h3>Sistema de Gestión de Citas</h3>
+
+            <p>
+              Aplicación para gestionar pacientes, doctores y
+              citas médicas con frontend, backend y persistencia
+              de datos.
+            </p>
+
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>NestJS</span>
+              <span>TypeORM</span>
+              <span>SQLite</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="project tilt-big reveal">
+
+          <div class="project-visual recharge">
+
+            <i class="fa-solid fa-mobile-screen-button"></i>
+
+            <div class="visual-grid"></div>
+
+          </div>
+
+          <div class="project-info">
+
+            <small>WEB APP</small>
+
+            <h3>Aplicación de Recargas</h3>
+
+            <p>
+              Aplicación web para gestionar simulaciones de
+              recargas móviles mediante una API backend.
+            </p>
+
+            <div class="project-tech">
+              <span>React</span>
+              <span>Vite</span>
+              <span>Python</span>
+              <span>REST API</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="project tilt-big reveal">
+
+          <div class="project-visual vehicle">
+
+            <i class="fa-solid fa-car"></i>
+
+            <div class="visual-grid"></div>
+
+          </div>
+
+          <div class="project-info">
+
+            <small>BACKEND · CLOUD</small>
+
+            <h3>Plataforma de Gestión Vehicular</h3>
+
+            <p>
+              Servicios backend para una plataforma orientada
+              al sector automotor, con funcionalidades similares
+              a sistemas de consulta y gestión de información
+              vehicular.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>AWS Lambda</span>
+              <span>DynamoDB</span>
+              <span>REST API</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCIA
+    ========================== -->
+
+    <section id="experiencia" class="section">
+
+      <div class="section-title reveal">
+
+        <span>04</span>
+
+        <div>
+          <small>EXPERIENCIA</small>
+          <h2>Lo que<br><b>sé hacer.</b></h2>
+        </div>
+
+      </div>
+
+
+      <div class="experience-list">
+
+
+        <div class="experience glass-card reveal">
+
+          <div class="experience-number">
+            01
+          </div>
+
+          <div>
+
+            <small>
+              BACKEND & CLOUD · SECTOR AUTOMOTOR
+            </small>
+
+            <h3>
+              Plataforma de Gestión Vehicular
+            </h3>
+
+            <p>
+              Desarrollo de servicios backend para una plataforma
+              orientada al sector automotor, con funcionalidades
+              similares a un sistema de consulta y gestión de
+              información vehicular.
+            </p>
+
+            <p>
+              Implementación de APIs y servicios serverless
+              utilizando <strong>Python, AWS Lambda y DynamoDB</strong>,
+              permitiendo gestionar información relacionada con
+              vehículos, consultas y diferentes procesos del sistema.
+            </p>
+
+            <div class="experience-tags">
+              <span>Python</span>
+              <span>AWS Lambda</span>
+              <span>DynamoDB</span>
+              <span>API REST</span>
+              <span>Serverless</span>
+              <span>Microservicios</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="experience glass-card reveal">
+
+          <div class="experience-number">
+            02
+          </div>
+
+          <div>
+
+            <small>
+              FRONTEND · DISEÑO WEB
+            </small>
+
+            <h3>
+              Interfaces Web Modernas
+            </h3>
+
+            <p>
+              Creación de páginas web modernas, responsivas y
+              profesionales utilizando HTML, CSS, JavaScript y React.
+            </p>
+
+            <div class="experience-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>UI/UX</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="experience glass-card reveal">
+
+          <div class="experience-number">
+            03
+          </div>
+
+          <div>
+
+            <small>
+              SISTEMAS · LINUX
+            </small>
+
+            <h3>
+              Linux & Desarrollo
+            </h3>
+
+            <p>
+              Configuración de entornos de desarrollo, uso de Linux,
+              Git/GitHub, terminal y herramientas modernas para
+              desarrollo de software.
+            </p>
+
+            <div class="experience-tags">
+              <span>Linux</span>
+              <span>Fedora</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCACIÓN
+    ========================== -->
+
+    <section class="section">
+
+      <div class="section-title reveal">
+
+        <span>05</span>
+
+        <div>
+          <small>FORMACIÓN</small>
+          <h2>Educación.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="education glass-card reveal">
+
+        <div class="education-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <div>
+
+          <small>
+            ACTUALMENTE
+          </small>
 
           <h3>
             Ingeniería de Sistemas
           </h3>
 
           <p>
-
             Universidad Autónoma del Caribe
-
-            <br><br>
-
-            Actualmente cursando séptimo semestre,
-            con enfoque en desarrollo de software,
-            tecnologías cloud, diseño web y programación
-            full stack.
-
           </p>
+
+          <span>
+            Desarrollo de software · Cloud · Programación ·
+            Arquitectura de sistemas
+          </span>
 
         </div>
 
-      </section>
-
-      <div class="footer">
-        © 2026 - Hoja de Vida Profesional
       </div>
 
-    </main>
+    </section>
 
-  </div>
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section id="contacto" class="contact section">
+
+      <div class="contact-inner reveal">
+
+        <small>
+          ¿TIENES UN PROYECTO?
+        </small>
+
+        <h2>
+          Hagamos algo<br>
+          <strong>increíble.</strong>
+        </h2>
+
+        <p>
+          Estoy disponible para proyectos, oportunidades y
+          colaboraciones relacionadas con desarrollo de software.
+        </p>
+
+        <a
+          href="mailto:dewinguzman257@gmail.com"
+          class="btn btn-primary"
+        >
+          Contactarme
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="contact-data">
+
+          <a href="mailto:dewinguzman257@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            dewinguzman257@gmail.com
+          </a>
+
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Barranquilla, Colombia
+          </span>
+
+          <a
+            href="https://github.com/zDewin-ux"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+            github.com/zDewin-ux
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div>
+
+      <strong>DR</strong>
+
+      <span>
+        © 2026 Dewin Reales
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- THREE.JS -->
+
+  <script
+    type="importmap"
+  >
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js"
+    }
+  }
+  </script>
+
+  <script
+    type="module"
+    src="script.js"
+  ></script>
 
 </body>
 </html>
