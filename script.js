@@ -692,4 +692,457 @@ window.addEventListener(
     }
 
   }
+  
 );
+
+// ============================================================
+// TERMINAL PRESENTACIÓN — DEWIN REALES
+// ============================================================
+
+const terminalCommand =
+  document.getElementById("terminal-command");
+
+const terminalOutput =
+  document.getElementById("terminal-output");
+
+const terminalCursor =
+  document.getElementById("terminal-cursor");
+
+const terminalSection =
+  document.querySelector(".developer-terminal-section");
+
+
+// ============================================================
+// TEXTO DE LA PRESENTACIÓN
+// ============================================================
+
+const presentation = [
+
+  {
+    command: "hola",
+
+    output: `
+      <span class="terminal-heading">
+        Hola, soy Dewin Reales.
+      </span>
+
+      <p>
+        Soy desarrollador
+        <span class="highlight">
+          Full Stack
+        </span>.
+      </p>
+
+      <p>
+        Trabajo tanto en
+        <span class="highlight">
+          Frontend
+        </span>
+        como en
+        <span class="highlight">
+          Backend
+        </span>.
+      </p>
+    `
+  },
+
+
+  {
+    command: "¿qué significa full stack?",
+
+    output: `
+      <span class="terminal-heading">
+        ¿No sabes qué es eso?
+      </span>
+
+      <p>
+        No hay problema.
+        <span class="highlight">
+          Ya te explico.
+        </span>
+      </p>
+
+      <p>
+        Full Stack significa que puedo trabajar
+        tanto en la parte que ves en una página web
+        como en toda la lógica que funciona detrás.
+      </p>
+    `
+  },
+
+
+  {
+    command: "cat frontend.txt",
+
+    output: `
+      <span class="terminal-heading">
+        FRONTEND
+      </span>
+
+      <p>
+        El Frontend es la parte visual de una aplicación.
+      </p>
+
+      <p>
+        Es todo aquello con lo que el usuario puede
+        <span class="highlight">
+          ver e interactuar
+        </span>:
+        botones, páginas, animaciones, formularios
+        y toda la experiencia visual.
+      </p>
+
+      <div class="terminal-tags">
+
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>UI/UX</span>
+
+      </div>
+    `
+  },
+
+
+  {
+    command: "cat backend.txt",
+
+    output: `
+      <span class="terminal-heading">
+        BACKEND
+      </span>
+
+      <p>
+        El Backend es la parte que está
+        <span class="highlight">
+          detrás de todo
+        </span>.
+      </p>
+
+      <p>
+        Aquí se encuentra la lógica de la aplicación,
+        las APIs, los servidores, las bases de datos
+        y la comunicación entre diferentes sistemas.
+      </p>
+
+      <div class="terminal-tags">
+
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>NestJS</span>
+        <span>Node.js</span>
+        <span>REST API</span>
+        <span>TypeORM</span>
+
+      </div>
+    `
+  },
+
+
+  {
+    command: "¿frontend + backend?",
+
+    output: `
+      <span class="terminal-heading">
+        Entonces... ¿qué hago?
+      </span>
+
+      <p>
+        Combino ambas partes para construir
+        <span class="highlight">
+          aplicaciones completas
+        </span>.
+      </p>
+
+      <p>
+        Desde la interfaz que ves en pantalla
+        hasta el servidor y la base de datos
+        que hacen que todo funcione.
+      </p>
+    `
+  },
+
+
+  {
+    command: "¿qué vamos a hacer juntos?",
+
+    output: `
+      <span class="terminal-heading">
+        ¿Qué vamos a hacer juntos?
+      </span>
+
+      <p>
+        Podemos convertir una idea en una
+        <span class="highlight">
+          solución real.
+        </span>
+      </p>
+
+      <p>
+        Una página web, una aplicación,
+        una API, un sistema completo
+        o cualquier proyecto tecnológico.
+      </p>
+
+      <p>
+        Tú tienes la idea.
+        <br>
+        Yo pongo el código.
+      </p>
+    `
+  },
+
+
+  {
+    command: "contact --dewin",
+
+    output: `
+      <span class="terminal-heading">
+        ¿Tienes un proyecto?
+      </span>
+
+      <p>
+        Escríbeme y hablemos sobre lo que
+        podemos construir juntos.
+      </p>
+
+      <p class="terminal-email">
+
+        <span class="highlight">
+          📧 dewinguzman257@gmail.com
+        </span>
+
+      </p>
+
+      <div class="terminal-contact-button">
+
+        <a href="mailto:dewinguzman257@gmail.com">
+          ENVIAR CORREO →
+        </a>
+
+      </div>
+    `
+  }
+
+];
+
+
+let presentationIndex = 0;
+
+let terminalStarted = false;
+
+let terminalRunning = false;
+
+
+// ============================================================
+// FUNCIÓN DE ESPERA
+// ============================================================
+
+function sleep(ms) {
+
+  return new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+
+}
+
+
+// ============================================================
+// ESCRIBIR COMANDO LETRA POR LETRA
+// ============================================================
+
+async function typeCommand(text) {
+
+  terminalCommand.textContent = "";
+
+  terminalCommand.style.opacity = "1";
+
+  terminalCursor.style.display =
+    "inline-block";
+
+  for (
+    let i = 0;
+    i < text.length;
+    i++
+  ) {
+
+    terminalCommand.textContent +=
+      text[i];
+
+    await sleep(55);
+
+  }
+
+}
+
+
+// ============================================================
+// MOSTRAR RESPUESTA
+// ============================================================
+
+async function showOutput(html) {
+
+  await sleep(400);
+
+  terminalOutput.innerHTML =
+    html;
+
+}
+
+
+// ============================================================
+// LIMPIAR TERMINAL
+// ============================================================
+
+async function clearTerminal() {
+
+  terminalOutput.style.opacity =
+    "0";
+
+  terminalCommand.style.opacity =
+    "0";
+
+  await sleep(450);
+
+  terminalOutput.innerHTML =
+    "";
+
+  terminalCommand.textContent =
+    "";
+
+  terminalOutput.style.opacity =
+    "1";
+
+  terminalCommand.style.opacity =
+    "1";
+
+}
+
+
+// ============================================================
+// EJECUTAR PRESENTACIÓN
+// ============================================================
+
+async function runPresentation() {
+
+  if (terminalRunning) {
+    return;
+  }
+
+  terminalRunning = true;
+
+
+  while (
+    presentationIndex <
+    presentation.length
+  ) {
+
+    const step =
+      presentation[
+        presentationIndex
+      ];
+
+
+    // Escribir comando
+
+    await typeCommand(
+      step.command
+    );
+
+
+    // Mostrar explicación
+
+    await showOutput(
+      step.output
+    );
+
+
+    // Tiempo para leer
+
+    await sleep(4000);
+
+
+    presentationIndex++;
+
+
+    // Limpiar antes del siguiente
+
+    if (
+      presentationIndex <
+      presentation.length
+    ) {
+
+      await clearTerminal();
+
+    }
+
+  }
+
+
+  // ========================================================
+  // FINAL
+  // ========================================================
+
+  terminalCursor.style.display =
+    "none";
+
+  terminalRunning = false;
+
+}
+
+
+// ============================================================
+// ACTIVAR CUANDO EL USUARIO LLEGUE A LA TERMINAL
+// ============================================================
+
+if (
+  terminalSection &&
+  terminalCommand &&
+  terminalOutput
+) {
+
+  const terminalObserver =
+    new IntersectionObserver(
+
+      entries => {
+
+        entries.forEach(
+          entry => {
+
+            if (
+              entry.isIntersecting &&
+              !terminalStarted
+            ) {
+
+              terminalStarted = true;
+
+              setTimeout(
+                () => {
+
+                  runPresentation();
+
+                },
+                500
+              );
+
+            }
+
+          }
+        );
+
+      },
+
+      {
+        threshold: 0.45
+      }
+
+    );
+
+
+  terminalObserver.observe(
+    terminalSection
+  );
+
+}
